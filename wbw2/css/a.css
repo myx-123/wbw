@@ -1,0 +1,861 @@
+.header {
+  background: #f0f0f0;
+  height: 30px; }
+  .header div {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .header div a {
+      float: left;
+      line-height: 30px;
+      color: #a58860;
+      text-decoration: none; }
+    .header div ul {
+      height: 30px;
+      float: right; }
+      .header div ul li {
+        margin-left: 20px;
+        float: left; }
+        .header div ul li a {
+          color: #949393; }
+          .header div ul li a:hover {
+            color: #111111;
+            text-decoration: underline; }
+        .header div ul li:nth-child(2) a {
+          color: brown; }
+          .header div ul li:nth-child(2) a:hover {
+            text-decoration: underline; }
+        .header div ul li:nth-child(3) {
+          width: 1px;
+          height: 12px;
+          margin-top: 9px;
+          background: #acaaaa; }
+        .header div ul li:nth-child(5) {
+          position: relative; }
+          .header div ul li:nth-child(5) .xlk {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            height: 176px;
+            width: 180px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #fff;
+            z-index: 666;
+            border: solid 1px #a8a6a6;
+            display: none;
+            border-top: none; }
+            .header div ul li:nth-child(5) .xlk .xlk1 {
+              margin: 0 auto;
+              width: 160px;
+              height: 88px;
+              border-bottom: solid 1px #a8a6a6; }
+              .header div ul li:nth-child(5) .xlk .xlk1 a {
+                display: inline-block;
+                line-height: 20px;
+                margin: 10px; }
+            .header div ul li:nth-child(5) .xlk p {
+              margin: 10px;
+              margin-left: 20px;
+              line-height: 20px; }
+        .header div ul li:nth-child(7) {
+          width: 1px;
+          height: 12px;
+          margin-top: 9px;
+          background: #acaaaa; }
+
+html body {
+  font-size: 11px; }
+
+.neck {
+  height: 175px;
+  background: #fff; }
+  .neck .neck1 {
+    height: 175px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative; }
+    .neck .neck1 .neck2 {
+      height: 130px;
+      position: relative; }
+      .neck .neck1 .neck2 img:nth-child(1) {
+        position: absolute;
+        left: 0;
+        top: 20px; }
+      .neck .neck1 .neck2 img:nth-child(2) {
+        position: absolute;
+        left: 121px;
+        top: 20px; }
+      .neck .neck1 .neck2 #ig {
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .neck .neck1 .neck2 .neck2-1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: inline-block;
+        width: 372px;
+        height: 42px;
+        border: none; }
+        .neck .neck1 .neck2 .neck2-1 input {
+          float: left;
+          width: 292px;
+          height: 40px;
+          border-radius: 5px 0 0 5px;
+          border-right: none;
+          border: solid 1px #acaaaa;
+          outline: none;
+          padding-left: 20px; }
+        .neck .neck1 .neck2 .neck2-1 button {
+          float: left;
+          width: 80px;
+          height: 40px;
+          border-left: none;
+          border-radius: 0 5px 5px 0;
+          border: solid 1px red;
+          background: red;
+          font-size: 14px;
+          color: #fff;
+          outline: none; }
+      .neck .neck1 .neck2 ul {
+        position: absolute;
+        left: 384px;
+        top: 84.5px;
+        list-style: none;
+        width: 292px;
+        height: 200px;
+        border: solid 1px #aaa8a8;
+        background: #ffffff;
+        border-top: none;
+        display: none;
+        z-index: 999;
+        padding-left: 20px; }
+        .neck .neck1 .neck2 ul li {
+          width: 100%;
+          height: 20px;
+          line-height: 20px; }
+    .neck .neck1 .neck3 {
+      height: 45px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .neck .neck1 .neck3 .neck3-1 {
+        float: left;
+        width: 180px;
+        height: 45px; }
+        .neck .neck1 .neck3 .neck3-1 a {
+          display: block;
+          width: 180px;
+          height: 45px;
+          background: red;
+          text-decoration: none; }
+          .neck .neck1 .neck3 .neck3-1 a strong {
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
+            margin-left: 15px;
+            color: #fff; }
+      .neck .neck1 .neck3 .neck3-2 {
+        width: 760px;
+        height: 45px;
+        float: left;
+        margin-left: 40px; }
+        .neck .neck1 .neck3 .neck3-2 a {
+          float: left;
+          height: 38px;
+          line-height: 38px;
+          margin: 0 10px 0 10px;
+          font-size: 13px;
+          color: #0a0a0a;
+          text-decoration: none; }
+          .neck .neck1 .neck3 .neck3-2 a:hover {
+            border-bottom: solid 3px red; }
+    .neck .neck1 .list {
+      position: absolute;
+      top: 175px;
+      left: 10px;
+      z-index: 999;
+      height: 357.2px; }
+      .neck .neck1 .list .list1 {
+        float: left;
+        width: 180px;
+        height: 357.2px;
+        background: #f3f1f1; }
+        .neck .neck1 .list .list1 ul {
+          width: 100%;
+          height: 100%;
+          padding-left: 10px;
+          padding-right: 10px; }
+          .neck .neck1 .list .list1 ul li {
+            width: 100%;
+            height: 44.7px;
+            list-style: none;
+            border-bottom: solid 1px #dad6d6; }
+            .neck .neck1 .list .list1 ul li strong {
+              line-height: 45px; }
+            .neck .neck1 .list .list1 ul li a {
+              line-height: 45px;
+              color: #3b3a3a;
+              margin-left: 5px;
+              font-size: 10px; }
+          .neck .neck1 .list .list1 ul .active {
+            background: #fff; }
+      .neck .neck1 .list .list2 {
+        float: left;
+        position: relative; }
+        .neck .neck1 .list .list2 a {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: none; }
+          .neck .neck1 .list .list2 a img {
+            width: 800px;
+            height: 357.2px; }
+        .neck .neck1 .list .list2 .active {
+          display: block; }
+
+.banner {
+  position: relative;
+  height: 357.2px; }
+  .banner .swiper-container {
+    width: 100%;
+    height: 357.2px; }
+    .banner .swiper-container .swiper-wrapper {
+      width: 100%;
+      height: 357.2px; }
+      .banner .swiper-container .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 357.2px; }
+        .banner .swiper-container .swiper-wrapper .swiper-slide a {
+          display: block;
+          width: 100%;
+          height: 357.2px; }
+          .banner .swiper-container .swiper-wrapper .swiper-slide a img {
+            width: 100%;
+            height: 357.2px; }
+
+.main {
+  background: #f0eded; }
+  .main .mains {
+    margin-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .main .mains .main1 {
+      width: 100%;
+      height: 280px; }
+      .main .mains .main1 a {
+        width: 271.6px;
+        height: 280px;
+        float: left;
+        overflow: hidden;
+        position: relative; }
+        .main .mains .main1 a:nth-child(2) {
+          margin: 0 11.2px 0 11.2px; }
+        .main .mains .main1 a:nth-child(3) {
+          margin-right: 11.2px; }
+        .main .mains .main1 a img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 271.6px;
+          height: 280px; }
+    .main .mains .main2 {
+      margin-top: 10px;
+      width: 100%;
+      height: 62px; }
+      .main .mains .main2 strong {
+        margin-left: 10px;
+        float: left;
+        line-height: 62px;
+        font-size: 18px;
+        font-weight: 600;
+        color: red; }
+      .main .mains .main2 p {
+        float: left;
+        width: 290px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 16px;
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 13px;
+        background: red;
+        color: #fff;
+        text-align: center; }
+        .main .mains .main2 p span {
+          font-size: 16px;
+          line-height: 32px;
+          font-weight: 700;
+          color: #fff;
+          margin: 0 5px 0 5px; }
+      .main .mains .main2 a {
+        line-height: 62px;
+        float: right;
+        font-size: 12px;
+        color: #111111; }
+    .main .mains .main3 {
+      height: 280px;
+      position: relative; }
+      .main .mains .main3 .main3-1 {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 365px;
+        height: 280px; }
+        .main .mains .main3 .main3-1 a {
+          display: block;
+          width: 365px;
+          height: 280px;
+          position: relative;
+          overflow: hidden; }
+          .main .mains .main3 .main3-1 a img {
+            width: 365px;
+            height: 280px;
+            position: absolute;
+            left: 0;
+            top: 0; }
+      .main .mains .main3 .swiper-container1 {
+        margin: 0 15px 0 15px;
+        position: absolute;
+        left: 365px;
+        top: 0;
+        width: 535px;
+        height: 280px;
+        background: #fff;
+        overflow: hidden; }
+        .main .mains .main3 .swiper-container1 .swiper-wrapper {
+          width: 480px;
+          margin: 10px auto; }
+          .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide {
+            width: 480px; }
+            .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a {
+              float: left;
+              width: 160px;
+              height: 280px;
+              text-decoration: none; }
+              .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a img {
+                width: 160px; }
+              .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a p {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 14px; }
+                .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(2) {
+                  color: #111111;
+                  font-weight: 700;
+                  line-height: 30px; }
+                .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(3) {
+                  width: 110px;
+                  height: 25px; }
+                  .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(3) strong:nth-child(1) {
+                    float: left;
+                    display: block;
+                    width: 45px;
+                    height: 25px;
+                    line-height: 25px;
+                    background: red;
+                    border-radius: 12px 0 0 12px;
+                    font-size: 12px;
+                    color: #fff; }
+                  .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(3) strong:nth-child(2) {
+                    float: left;
+                    display: block;
+                    width: 65px;
+                    height: 25px;
+                    line-height: 25px;
+                    background: #dad6d6;
+                    color: red;
+                    font-size: 14px;
+                    border-radius: 0 12px 12px 0; }
+                .main .mains .main3 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(4) {
+                  color: #acaaaa;
+                  text-decoration: line-through;
+                  line-height: 25px; }
+        .main .mains .main3 .swiper-container1 .swiper-button-prev {
+          width: 30px;
+          height: 60px;
+          position: absolute;
+          left: 0;
+          background: #dad6d6;
+          border-radius: 0 10px 10px 0; }
+          .main .mains .main3 .swiper-container1 .swiper-button-prev:after {
+            font-size: 30px;
+            color: #fff; }
+          .main .mains .main3 .swiper-container1 .swiper-button-prev:hover {
+            background: red; }
+        .main .mains .main3 .swiper-container1 .swiper-button-next {
+          width: 30px;
+          height: 60px;
+          position: absolute;
+          right: 0;
+          background: #dad6d6;
+          border-radius: 10px 0 0 10px; }
+          .main .mains .main3 .swiper-container1 .swiper-button-next:after {
+            font-size: 30px;
+            color: #fff; }
+          .main .mains .main3 .swiper-container1 .swiper-button-next:hover {
+            background: red; }
+      .main .mains .main3 .main3-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        width: 190px;
+        height: 280px;
+        background: #fff; }
+        .main .mains .main3 .main3-2 .swiper-container {
+          padding-top: 30px;
+          width: 190px;
+          height: 280px; }
+        .main .mains .main3 .main3-2 .swiper-wrapper {
+          width: 140px;
+          height: 205px;
+          margin: 0 auto;
+          overflow: hidden; }
+          .main .mains .main3 .main3-2 .swiper-wrapper .swiper-slide {
+            width: 140px;
+            height: 205px; }
+            .main .mains .main3 .main3-2 .swiper-wrapper .swiper-slide a {
+              display: block;
+              width: 140px;
+              height: 205px; }
+              .main .mains .main3 .main3-2 .swiper-wrapper .swiper-slide a img {
+                width: 140px;
+                height: 205px; }
+        .main .mains .main3 .main3-2 .swiper-button-prev {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 154px;
+          width: 20px;
+          height: 30px; }
+          .main .mains .main3 .main3-2 .swiper-button-prev:after {
+            font-size: 20px;
+            color: #dad6d6; }
+        .main .mains .main3 .main3-2 .swiper-button-next {
+          display: block;
+          position: absolute;
+          right: -10px;
+          top: 154px;
+          width: 20px;
+          height: 30px; }
+          .main .mains .main3 .main3-2 .swiper-button-next:after {
+            font-size: 20px;
+            color: #dad6d6; }
+        .main .mains .main3 .main3-2 .swiper-pagination {
+          position: absolute;
+          bottom: 17px; }
+    .main .mains .main4 {
+      margin-top: 15px;
+      height: 50px; }
+      .main .mains .main4 strong {
+        float: left;
+        padding-left: 10px;
+        line-height: 50px;
+        font-size: 18px;
+        color: #111111;
+        font-weight: 700;
+        margin-right: 20px; }
+      .main .mains .main4 a {
+        margin-top: 10px;
+        float: left;
+        display: block;
+        line-height: 30px;
+        padding: 0 4px 0 4px;
+        background: #0a0a0a;
+        color: #f1d42f; }
+    .main .mains .main5 {
+      height: 354px; }
+      .main .mains .main5 .main5-1 {
+        float: left;
+        width: 365px;
+        height: 354px; }
+        .main .mains .main5 .main5-1 a {
+          height: 354px;
+          display: block;
+          position: relative;
+          overflow: hidden; }
+          .main .mains .main5 .main5-1 a img {
+            width: 365px;
+            height: 354px;
+            position: absolute;
+            left: 0;
+            top: 0; }
+      .main .mains .main5 .main5-2 {
+        float: left;
+        width: 743px;
+        margin-left: 11px; }
+        .main .mains .main5 .main5-2 .main5-3 {
+          width: 743px;
+          height: 171px;
+          margin-bottom: 10px; }
+          .main .mains .main5 .main5-2 .main5-3 a {
+            float: left;
+            display: block; }
+            .main .mains .main5 .main5-2 .main5-3 a:nth-child(1) {
+              margin-right: 11px; }
+            .main .mains .main5 .main5-2 .main5-3 a:hover {
+              box-shadow: -8px -8px 6px #e6e1e1; }
+            .main .mains .main5 .main5-2 .main5-3 a img {
+              width: 366px;
+              height: 171px; }
+        .main .mains .main5 .main5-2 .main5-4 {
+          width: 743px;
+          height: 171px; }
+          .main .mains .main5 .main5-2 .main5-4 a {
+            float: left;
+            display: block; }
+            .main .mains .main5 .main5-2 .main5-4 a:nth-child(1) {
+              margin-right: 11px; }
+            .main .mains .main5 .main5-2 .main5-4 a:hover {
+              box-shadow: -8px -8px 6px #e6e1e1; }
+            .main .mains .main5 .main5-2 .main5-4 a img {
+              width: 366px;
+              height: 171px; }
+    .main .mains .main6 {
+      margin-top: 15px;
+      width: 100%;
+      height: 52px; }
+      .main .mains .main6 strong {
+        margin-left: 10px;
+        float: left;
+        line-height: 52px;
+        font-size: 18px;
+        font-weight: 600;
+        color: red; }
+      .main .mains .main6 a {
+        line-height: 52px;
+        float: right;
+        font-size: 12px;
+        color: #111111; }
+    .main .mains .main7 {
+      height: 280px; }
+      .main .mains .main7 .main7-1 {
+        float: left;
+        width: 365px;
+        margin-right: 10px; }
+        .main .mains .main7 .main7-1 a {
+          height: 280px;
+          display: block;
+          position: relative;
+          overflow: hidden; }
+          .main .mains .main7 .main7-1 a img {
+            width: 365px;
+            height: 280px;
+            position: absolute;
+            left: 0;
+            top: 0; }
+      .main .mains .main7 .swiper-container1 {
+        position: relative;
+        float: left;
+        width: 745px;
+        height: 280px;
+        overflow: hidden;
+        background: #fff; }
+        .main .mains .main7 .swiper-container1 .swiper-wrapper {
+          padding-top: 25px;
+          width: 685px;
+          margin-left: 30px;
+          height: 255px; }
+          .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide {
+            width: 685px; }
+            .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a {
+              float: left;
+              width: 127px;
+              display: block;
+              margin: 0 22px 0 22px;
+              text-decoration: none; }
+              .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a img {
+                width: 127px;
+                height: 166px; }
+              .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a p {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 14px; }
+                .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(2) {
+                  color: #111111;
+                  font-weight: 600;
+                  line-height: 30px; }
+                .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(3) {
+                  width: 80px;
+                  height: 20px;
+                  line-height: 20px;
+                  border-radius: 14px;
+                  background: red;
+                  text-align: center;
+                  color: #fff; }
+                .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(4) strong {
+                  line-height: 25px; }
+                  .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(4) strong:nth-child(1) {
+                    color: red;
+                    margin-right: 10px; }
+                  .main .mains .main7 .swiper-container1 .swiper-wrapper .swiper-slide a p:nth-child(4) strong:nth-child(2) {
+                    color: #acaaaa;
+                    text-decoration: line-through; }
+        .main .mains .main7 .swiper-container1 .swiper-button-prev {
+          width: 30px;
+          height: 60px;
+          position: absolute;
+          left: 0;
+          background: #dad6d6;
+          border-radius: 0 10px 10px 0; }
+          .main .mains .main7 .swiper-container1 .swiper-button-prev:after {
+            font-size: 30px;
+            color: #fff; }
+          .main .mains .main7 .swiper-container1 .swiper-button-prev:hover {
+            background: red; }
+        .main .mains .main7 .swiper-container1 .swiper-button-next {
+          width: 30px;
+          height: 60px;
+          position: absolute;
+          right: 0;
+          background: #dad6d6;
+          border-radius: 10px 0 0 10px; }
+          .main .mains .main7 .swiper-container1 .swiper-button-next:after {
+            font-size: 30px;
+            color: #fff; }
+          .main .mains .main7 .swiper-container1 .swiper-button-next:hover {
+            background: red; }
+    .main .mains .main8 {
+      margin-top: 15px;
+      height: 50px; }
+      .main .mains .main8 strong {
+        float: left;
+        padding-left: 10px;
+        line-height: 50px;
+        font-size: 18px;
+        color: #111111;
+        font-weight: 700;
+        margin-right: 20px; }
+      .main .mains .main8 a {
+        margin-top: 10px;
+        float: left;
+        display: block;
+        line-height: 30px;
+        padding: 0 4px 0 4px;
+        background: #0a0a0a;
+        color: #f1d42f; }
+    .main .mains .main9 {
+      height: 354px; }
+      .main .mains .main9 .main9-1 {
+        float: left;
+        width: 365px;
+        height: 354px; }
+        .main .mains .main9 .main9-1 a {
+          height: 354px;
+          display: block;
+          position: relative;
+          overflow: hidden; }
+          .main .mains .main9 .main9-1 a img {
+            width: 365px;
+            height: 354px;
+            position: absolute;
+            left: 0;
+            top: 0; }
+      .main .mains .main9 .main9-2 {
+        float: left;
+        width: 743px;
+        margin-left: 11px; }
+        .main .mains .main9 .main9-2 .main9-3 {
+          width: 743px;
+          height: 171px;
+          margin-bottom: 10px; }
+          .main .mains .main9 .main9-2 .main9-3 a {
+            float: left;
+            display: block; }
+            .main .mains .main9 .main9-2 .main9-3 a:nth-child(1) {
+              margin-right: 11px; }
+            .main .mains .main9 .main9-2 .main9-3 a:hover {
+              box-shadow: -8px -8px 6px #e6e1e1; }
+            .main .mains .main9 .main9-2 .main9-3 a img {
+              width: 366px;
+              height: 171px; }
+        .main .mains .main9 .main9-2 .main9-4 {
+          width: 743px;
+          height: 171px; }
+          .main .mains .main9 .main9-2 .main9-4 a {
+            float: left;
+            display: block; }
+            .main .mains .main9 .main9-2 .main9-4 a:nth-child(1) {
+              margin-right: 11px; }
+            .main .mains .main9 .main9-2 .main9-4 a:hover {
+              box-shadow: -8px -8px 6px #e6e1e1; }
+            .main .mains .main9 .main9-2 .main9-4 a img {
+              width: 366px;
+              height: 171px; }
+
+.zc {
+  width: 570px;
+  margin: 0 auto; }
+  .zc .zc1 {
+    height: 105px;
+    padding-top: 20px; }
+  .zc .zc2 {
+    background: #e0dfdf;
+    padding-bottom: 20px; }
+    .zc .zc2 h1 {
+      padding-top: 15px;
+      width: 100%;
+      text-align: center;
+      line-height: 30px;
+      font-size: 18px; }
+    .zc .zc2 input {
+      width: 250px;
+      height: 25px;
+      display: block;
+      margin: 10px auto; }
+    .zc .zc2 button {
+      width: 150px;
+      height: 30px;
+      background: red;
+      display: block;
+      margin: 0 auto;
+      color: #fff;
+      border: none;
+      outline: none; }
+
+.dl {
+  width: 100%; }
+  .dl .dl1 {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto; }
+  .dl .dl2 {
+    width: 100%;
+    position: relative;
+    height: 500px; }
+    .dl .dl2 img {
+      width: 100%;
+      height: 500px; }
+    .dl .dl2 .dl3 {
+      width: 400px;
+      height: 350px;
+      position: absolute;
+      top: 30px;
+      right: 200px;
+      background: #fff; }
+      .dl .dl2 .dl3 h1 {
+        padding-top: 15px;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px; }
+      .dl .dl2 .dl3 input {
+        width: 250px;
+        height: 25px;
+        display: block;
+        margin: 20px auto; }
+      .dl .dl2 .dl3 button {
+        width: 150px;
+        height: 30px;
+        background: red;
+        display: block;
+        margin: 40px auto;
+        color: #fff;
+        border: none;
+        outline: none; }
+
+.cars .car1 {
+  width: 800px;
+  height: 80px;
+  margin: 20px auto; }
+
+.cars .car2 {
+  margin-top: 30px;
+  padding-top: 30px;
+  width: 200px;
+  height: 220px;
+  margin: 0 auto; }
+  .cars .car2 img {
+    text-align: center; }
+  .cars .car2 p {
+    margin-top: 20px; }
+    .cars .car2 p a:nth-child(1) {
+      text-align: center;
+      float: left;
+      display: block;
+      width: 80px;
+      height: 25px;
+      line-height: 25px;
+      border-radius: 12px;
+      background: red;
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none; }
+    .cars .car2 p a:nth-child(2) {
+      float: left;
+      text-align: center;
+      display: block;
+      width: 78px;
+      height: 25px;
+      line-height: 25px;
+      border-radius: 12px;
+      background: #fff;
+      color: red;
+      border: solid 1px red;
+      text-decoration: none; }
+
+.xq {
+  width: 100%; }
+  .xq a {
+    display: block; }
+    .xq a img {
+      width: 100%;
+      height: 257px; }
+
+.fdj {
+  width: 750px;
+  height: 370px;
+  margin: 10px auto; }
+  .fdj .fdj1 {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+    border: solid 1px #acaaaa;
+    overflow: hidden; }
+    .fdj .fdj1 img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 300px;
+      height: 300px; }
+  .fdj .lb {
+    position: absolute;
+    left: 385px;
+    top: 595px;
+    width: 300px;
+    height: 55px; }
+    .fdj .lb img {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px 0 10px; }
+    .fdj .lb .active {
+      border: solid red 2px; }
+  .fdj .xqt {
+    float: left;
+    width: 420px;
+    height: 350px; }
+    .fdj .xqt a {
+      display: block; }
+      .fdj .xqt a img {
+        width: 420px;
+        height: 350px; }
+
+.gwc {
+  width: 100%; }
+  .gwc a {
+    display: block;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    border-radius: 6px; }

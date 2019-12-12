@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>会员登录</title><link rel=stylesheet href=./css/a.css></head><body><div class=dl><div class=dl1><img src=./image/logo-icon.png></div><div class=dl2><img src=./image/dl.jpg><div class=dl3><h1>会员登录</h1><input class=tet type=text placeholder=请输入用户名> <input class=pad type=password placeholder=请输入密码> <button>立即登录</button></div></div></div></body><script>
+var dl = document.querySelector('.dl3')
+var tet = dl.querySelector('.tet')
+var pad = dl.querySelector('.pad')
+var bun = dl.querySelector('button')
+bun.onclick = function(){
+    if (tet.value == "") {
+            alert('请输入用户名')
+            return
+        }
+        if (pad.value == "") {
+            alert('请输入密码')
+            return
+        }
+    var json = JSON.parse(localStorage.getItem('list')||"[]")
+    if (json.length) {
+            for (var i = 0; i < json.length; i++) {
+                if (json[i].name === tet.value && json[i].password === pad.value) {
+                    alert('恭喜你登录成功')
+                    // txt.value = ''
+                    // psd.value = ''
+                    return
+                }
+
+            }
+            alert('用户名或密码错误')
+          tet.value = ''
+          pad.value = ''
+          return
+        }
+        alert('该用户未注册,请先注册')
+}
+</script></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Document</title><link rel=stylesheet href=./css/a.css></head><body><div class=xq><a href=javascript:;><img src=./image/xqy1.png></a></div><div class=fdj><div class=fdj1><img src=./image/fdjs0.jpg></div><div class=lb><img src=./image/fdjs0.jpg class=active> <img src=./image/fdjs1.jpg> <img src=./image/fdjs2.jpg> <img src=./image/fdjs3.jpg></div><div class=xqt><a href=javascript:;><img src=./image/xq1.png></a></div></div><div class=gwc><a href=javascript:;>加入购物车</a></div></body><script>
+    (function(){
+    var fdj = document.querySelector('.fdj')
+    var fdj1 = document.querySelector('.fdj1')
+    var fdj2 = document.querySelector('.fdj2')
+    var lb = document.querySelector('.lb')
+    var oImg = fdj1.querySelector('img')
+    var oImg2 = lb.querySelectorAll('img')
+    var index = 0
+    fd(index)
+    function qh() {
+        for (var i = 0; i < oImg2.length; i++) {
+            oImg2[i].index = i
+            oImg2[i].onmouseenter = function () {
+                for (var i = 0; i < oImg2.length; i++) {
+                    oImg2[i].classList.remove('active')
+                    oImg.src = "./image/fdjs"+i+".jpg"
+                }
+                var index = this.index
+                oImg2[index].classList.add('active')
+                oImg.src = "./image/fdjs"+index+".jpg"
+                 fd(index)
+            }
+        }
+    }
+    qh()
+    function fd(s) {
+        fdj1.onmouseenter = function () {
+        oImg.src = "./image/fdj"+s+".jpg"
+        oImg.style.width = 800 + 'px'
+        oImg.style.height = 800 + 'px'
+    }
+
+    fdj1.onmousemove = function (e) {
+        var ev = event || e
+        var ltx = ev.clientX
+        var tpy = ev.clientY
+        var mlt = ltx - fdj.offsetLeft
+        var mtp = tpy - fdj.offsetTop
+
+        var hdX = fdj1.offsetWidth - mlt
+        var hdy = fdj1.offsetHeight - mtp
+        var blx = mlt / hdX
+        var bly = mtp / hdy
+        oImg.style.left = -blx * (oImg.offsetWidth - fdj1.clientWidth) + 'px'
+        oImg.style.top = -bly * (oImg.offsetHeight - fdj1.clientHeight) + 'px'
+    }
+
+    fdj1.onmouseleave = function () {
+        oImg.src = "./image/fdjs"+s+".jpg"
+        oImg.style.top = 0 + 'px'
+        oImg.style.left = 0 + 'Px'
+        oImg.style.width = 300 + 'px'
+        oImg.style.height = 300 + 'px'
+    }
+    }
+    })();
+    
+    (function(){
+        var gwc = document.querySelector('.gwc')
+        var car = gwc.querySelector('a')
+        var arr = []
+        car.onclick = function(){
+            var json = JSON.parse(localStorage.getItem('data')||'[]')
+            if(!json.length){
+                var obj = {
+                    id:10001,
+                    img:'./image/fdjs0.jpg',
+                    message:'拓天马TUTIMA-M2',
+                    price:'￥12700',
+                    num:1,
+                }
+                arr.push(obj)
+                localStorage.setItem('data',JSON.stringify(arr))
+                return
+            }
+            for(var i=0; i<json.length; i++){
+                if(json[i].id === 10001){
+                    json[i].num++
+                    localStorage.setItem('data',JSON.stringify(json))
+                    return
+                }
+              
+            }
+
+            var obj = {
+                    id:10001,
+                    img:'./image/fdjs0.jpg',
+                    message:'拓天马TUTIMA-M2',
+                    price:'￥12700',
+                    num:1,
+                }
+                json.push(obj)
+                localStorage.setItem('data',JSON.stringify(json))
+                return
+        }
+
+    })()
+   
+</script></html>

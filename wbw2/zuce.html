@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>万表网注册</title><link rel=stylesheet href=./css/a.css></head><body><div class=zc><div class=zc1><img src=./image/logo-icon.png> <img src=./image/slogan.png></div><div class=zc2><h1>注册万表会员</h1><input class=int type=text placeholder=请输入用户名> <input class=psd type=password placeholder=请输入密码> <button>立即注册</button></div></div></body><script>
+    var btn = document.querySelector('button')
+    var txt = document.querySelector('.int')
+    var psd = document.querySelector('.psd')
+    var arr = []
+    btn.onclick = function () {
+        if (txt.value == "") {
+            alert('请输入用户名')
+            return
+        }
+        if (psd.value == "") {
+            alert('请输入密码')
+            return
+        }
+        var json = JSON.parse(localStorage.getItem('list')||"[]")
+        console.log(json)
+
+        if (!json.length) {
+            var obj = {
+                name: txt.value,
+                password: psd.value
+            }
+            arr.push(obj)
+            console.log(arr)
+            localStorage.setItem('list', JSON.stringify(arr))
+            txt.value = ''
+            psd.value = ''
+            alert('恭喜你注册成功')
+            return
+        }
+
+
+        if (json.length) {
+            for (var i = 0; i < json.length; i++) {
+                if (json[i].name === txt.value) {
+                    alert('该用户名已注册')
+                    txt.value = ''
+                    psd.value = ''
+                    return
+                }
+            }
+            var obj = {
+                name: txt.value,
+                password: psd.value
+            }
+            json.push(obj)
+            localStorage.setItem('list', JSON.stringify(json))
+            txt.value = ''
+            psd.value = ''
+            alert('恭喜你注册成功')
+            return
+        }
+
+    }
+</script></html>
