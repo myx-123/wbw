@@ -809,7 +809,8 @@ html body {
 .fdj {
   width: 750px;
   height: 370px;
-  margin: 10px auto; }
+  margin: 10px auto;
+  position: relative; }
   .fdj .fdj1 {
     position: relative;
     float: left;
@@ -826,8 +827,8 @@ html body {
       height: 300px; }
   .fdj .lb {
     position: absolute;
-    left: 385px;
-    top: 595px;
+    left: 0;
+    top: 310px;
     width: 300px;
     height: 55px; }
     .fdj .lb img {

@@ -1019,6 +1019,7 @@ html body{
     width: 750px;
     height: 370px;
     margin: 10px auto;
+    position: relative;
     
     .fdj1{
         position: relative;
@@ -1035,22 +1036,24 @@ html body{
         width: 300px;
         height: 300px;
         }
+        
     }
-   .lb{
-       position: absolute;
-       left: 385px;
-       top: 595px;
-       width: 300px;
-       height:55px;
-       img{
-           width: 50px;
-           height: 50px;
-           margin: 0 10px 0 10px;
-       }
-       .active{
-        border: solid red 2px
-       }
-   }
+    .lb{
+        position: absolute;
+        left: 0;
+        top: 310px;
+        width: 300px;
+        height:55px;
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 0 10px 0 10px;
+        }
+        .active{
+         border: solid red 2px
+        }
+    }
+  
     .xqt{
         float: left;
         width: 420px;
